@@ -1,5 +1,37 @@
 @import "tailwindcss";
 
+/* ---------- Licensed brand fonts (files go in public/fonts — see README there) ----------
+   Until the files are added the stacks below fall back to Gilda Display / Figtree. */
+@font-face {
+  font-family: "Eternal Bloom";
+  src:
+    url("/fonts/EternalBloom-Regular.woff2") format("woff2"),
+    url("/fonts/EternalBloom-Regular.otf") format("opentype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Aeonik";
+  src:
+    url("/fonts/Aeonik-Light.woff2") format("woff2"),
+    url("/fonts/Aeonik-Light.otf") format("opentype");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Aeonik";
+  src:
+    url("/fonts/Aeonik-Regular.woff2") format("woff2"),
+    url("/fonts/Aeonik-Regular.otf") format("opentype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
 :root {
   --navy: #001223;
   --navy-soft: #03193a;
@@ -12,6 +44,8 @@
   --color-gold: var(--gold);
   --font-sans: var(--font-figtree);
   --font-serif: var(--font-gilda);
+  --font-bloom: "Eternal Bloom", var(--font-gilda), serif;
+  --font-aeonik: "Aeonik", var(--font-figtree), sans-serif;
 }
 
 html {

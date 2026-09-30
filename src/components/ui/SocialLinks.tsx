@@ -11,9 +11,11 @@ type Props = {
   /** "plain" = bare gold icons (header), "circle" = outlined round buttons (hero) */
   variant?: "plain" | "circle";
   className?: string;
+  /** Overrides the icon size classes. */
+  iconClassName?: string;
 };
 
-export default function SocialLinks({ variant = "plain", className = "" }: Props) {
+export default function SocialLinks({ variant = "plain", className = "", iconClassName }: Props) {
   return (
     <ul className={`flex items-center ${className}`}>
       {items.map(({ label, href, Icon }) => (
@@ -29,7 +31,7 @@ export default function SocialLinks({ variant = "plain", className = "" }: Props
                 : "flex items-center text-gold transition-opacity hover:opacity-80"
             }
           >
-            <Icon className={variant === "circle" ? "size-5 md:size-4" : "size-[18px] md:size-4"} />
+            <Icon className={iconClassName ?? (variant === "circle" ? "size-5 md:size-4" : "size-[18px] md:size-4")} />
           </a>
         </li>
       ))}

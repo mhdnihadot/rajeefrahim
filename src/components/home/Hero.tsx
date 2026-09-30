@@ -7,10 +7,11 @@ import SocialLinks from "@/components/ui/SocialLinks";
 
 export default function Hero() {
   return (
-    <section className="overflow-hidden bg-navy pb-16 md:pb-24">
-      <Container className="grid items-center gap-8 md:grid-cols-[minmax(0,1fr)_320px] md:gap-6 md:pt-20 lg:grid-cols-[minmax(0,1fr)_380px] xl:grid-cols-[minmax(0,1fr)_400px] xl:pt-28">
-        {/* Photo — first on mobile, right column on desktop */}
-        <div className="relative mx-auto w-full max-w-[420px] md:order-2 md:max-w-none">
+    <section className="overflow-hidden bg-navy pb-8 md:pb-24">
+      <Container className="grid items-center gap-8 md:grid-cols-[minmax(0,1fr)_300px] md:gap-6 md:pt-20 lg:grid-cols-[minmax(0,1fr)_360px] xl:grid-cols-[minmax(0,1fr)_420px] xl:pt-28">
+        {/* Photo — full 2:3 portrait (head to hands). First on mobile; right column on
+            desktop, top aligned with the name and nudged past the content edge. */}
+        <div className="relative mx-auto w-full max-w-[345px] md:order-2 md:max-w-none md:w-full md:self-start xl:mt-8 xl:translate-x-16 min-[1440px]:translate-x-24">
           <div
             aria-hidden
             className="absolute inset-[-8%] bg-[radial-gradient(closest-side,#0a2a52_0%,transparent_100%)] opacity-40"
@@ -21,8 +22,8 @@ export default function Hero() {
             width={c.image.width}
             height={c.image.height}
             priority
-            sizes="(min-width: 1280px) 400px, (min-width: 768px) 380px, 420px"
-            className="relative aspect-[4/5] w-full object-cover object-top [mask-composite:intersect] [mask-image:linear-gradient(to_right,transparent,#000_18%,#000_82%,transparent),linear-gradient(to_bottom,transparent,#000_12%,#000_78%,transparent)] md:aspect-[4/5]"
+            sizes="(min-width: 1280px) 420px, (min-width: 1024px) 360px, 345px"
+            className="relative aspect-[5/6] w-full object-cover object-center md:aspect-[2/3] md:object-top [mask-composite:intersect] [mask-image:linear-gradient(to_right,transparent,#000_14%,#000_86%,transparent),linear-gradient(to_bottom,transparent,#000_8%,#000_86%,transparent)]"
           />
         </div>
 
@@ -32,7 +33,7 @@ export default function Hero() {
             {c.name}
           </h1>
 
-          <p className="mt-3 font-serif text-[23px] leading-[1.15] md:mt-6 md:text-[34px] lg:text-[42px] xl:mt-8 xl:text-[48px] xl:leading-[1.12]">
+          <p className="mt-3 font-bloom text-[23px] leading-[1.15] md:mt-6 md:text-[34px] lg:text-[42px] xl:mt-8 xl:text-[48px] xl:leading-[1.12]">
             {c.tagline.map((line, i) => (
               <span key={i} className="block xl:whitespace-nowrap">
                 <GoldText segments={line} />
@@ -40,20 +41,20 @@ export default function Hero() {
             ))}
           </p>
 
-          <p className="mt-5 max-w-md text-base font-light text-white/80 md:mt-8 md:text-lg">
+          <p className="mt-5 font-aeonik text-base font-light text-white/80 md:mt-8 md:text-lg lg:whitespace-nowrap">
             {c.description}
           </p>
 
-          <div className="mt-8 flex flex-wrap gap-3 md:mt-7 md:gap-4">
+          <div className="mt-8 flex gap-2 min-[380px]:gap-2.5 md:mt-7 md:gap-4">
             <Link
               href={c.primaryCta.href}
-              className="rounded-full border border-white px-5 py-2.5 text-[15px] text-white transition-colors hover:border-gold hover:text-gold md:text-[17px]"
+              className="rounded-full border border-white px-3 py-2.5 font-aeonik text-[13px] whitespace-nowrap min-[350px]:px-4 min-[350px]:text-sm text-white min-[380px]:px-5 min-[380px]:text-[15px] transition-colors hover:border-gold hover:text-gold md:text-[17px]"
             >
               {c.primaryCta.label}
             </Link>
             <Link
               href={c.secondaryCta.href}
-              className="rounded-full bg-gold px-5 py-2.5 text-[15px] text-navy transition-opacity hover:opacity-90 md:text-[17px]"
+              className="rounded-full bg-gold px-3 py-2.5 font-aeonik text-[13px] whitespace-nowrap min-[350px]:px-4 min-[350px]:text-sm text-navy min-[380px]:px-5 min-[380px]:text-[15px] transition-opacity hover:opacity-90 md:text-[17px]"
             >
               {c.secondaryCta.label}
             </Link>
@@ -61,7 +62,7 @@ export default function Hero() {
 
           <div className="mt-12 flex flex-col items-start gap-5 md:mt-24 md:items-end md:gap-4 md:pr-4">
             <p className="text-base font-light text-white/80 md:text-[17px]">{c.socialsLabel}</p>
-            <SocialLinks variant="circle" className="gap-9 md:gap-5" />
+            <SocialLinks variant="circle" className="gap-4 md:gap-5" />
           </div>
         </div>
       </Container>
