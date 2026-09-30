@@ -6,9 +6,9 @@ Copy them in locally; names must match the `@font-face` rules at the top of `src
 | File | Font | Status |
 |---|---|---|
 | `EternalBloom-Regular.otf` | Eternal Bloom | added (personal-use copy — buy commercial licence before launch) |
-| `Aeonik-Regular.otf` / `.woff2` | Aeonik Regular (upright) | **missing** — buttons, labels, card descriptions, article text |
-| `Aeonik-Light.otf` / `.woff2` | Aeonik Light (upright) | **missing** — hero description, "Checkout My Socials" |
+| `Aeonik-Regular.ttf` | Aeonik Regular (upright) | added — buttons, labels, card descriptions, article text |
+| `Aeonik-Light.ttf` | Aeonik Light (upright) | added — hero description, "Checkout My Socials" |
 | `Aeonik-RegularItalic.ttf` | Aeonik Regular Italic | added (italic text only) |
 | `Aeonik-LightItalic.ttf` | Aeonik Light Italic | added (italic text only) |
 
-Until an upright Aeonik file exists, that text falls back to Figtree.
+If a file is missing, that text falls back to Gilda Display (Eternal Bloom) / Figtree (Aeonik).

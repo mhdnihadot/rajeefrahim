@@ -4,9 +4,7 @@
    Until the files are added the stacks below fall back to Gilda Display / Figtree. */
 @font-face {
   font-family: "Eternal Bloom";
-  src:
-    url("/fonts/EternalBloom-Regular.woff2") format("woff2"),
-    url("/fonts/EternalBloom-Regular.otf") format("opentype");
+  src: url("/fonts/EternalBloom-Regular.otf") format("opentype");
   font-weight: 400;
   font-style: normal;
   font-display: swap;
@@ -15,8 +13,7 @@
 @font-face {
   font-family: "Aeonik";
   src:
-    url("/fonts/Aeonik-Light.woff2") format("woff2"),
-    url("/fonts/Aeonik-Light.otf") format("opentype");
+    url("/fonts/Aeonik-Light.ttf") format("truetype");
   font-weight: 300;
   font-style: normal;
   font-display: swap;
@@ -25,8 +22,7 @@
 @font-face {
   font-family: "Aeonik";
   src:
-    url("/fonts/Aeonik-Regular.woff2") format("woff2"),
-    url("/fonts/Aeonik-Regular.otf") format("opentype");
+    url("/fonts/Aeonik-Regular.ttf") format("truetype");
   font-weight: 400;
   font-style: normal;
   font-display: swap;
