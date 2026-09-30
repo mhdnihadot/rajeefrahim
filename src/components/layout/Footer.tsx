@@ -20,9 +20,9 @@ export default function Footer() {
 
         <SocialLinks className="mt-7 gap-9 md:gap-10" iconClassName="size-5" />
 
-        {/* Mobile: two left-aligned columns (3 + 3) at fixed offsets. Desktop: one centred row. */}
-        <nav aria-label="Footer" className="mt-12 w-full md:mt-9 md:w-auto">
-          <ul className="grid grid-flow-col grid-cols-2 grid-rows-3 gap-y-5 pl-[33px] min-[360px]:grid-cols-[164px_1fr] md:flex md:flex-wrap md:justify-center md:gap-x-10 md:gap-y-3 md:pl-0">
+        {/* Mobile: two rows of three, aligned in columns and centred. Desktop: one centred row. */}
+        <nav aria-label="Footer" className="mt-10 md:mt-9">
+          <ul className="grid grid-cols-[repeat(3,auto)] gap-x-6 gap-y-5 min-[360px]:gap-x-9 md:flex md:flex-wrap md:justify-center md:gap-x-10 md:gap-y-3">
             {siteConfig.footerLinks.map((item) => (
               <li key={item.label}>
                 <Link

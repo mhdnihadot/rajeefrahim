@@ -4,7 +4,7 @@ import GoldText from "@/components/ui/GoldText";
 
 export default function PersonBehind() {
   return (
-    <section id="about" className="scroll-mt-8 bg-navy py-16 md:py-20">
+    <section id="about" className="scroll-mt-8 bg-navy pt-16 pb-8 md:pt-20 md:pb-10">
       <Container>
         <p className="text-center font-aeonik text-base text-gold md:text-left md:text-[17px]">{c.eyebrow}</p>
 

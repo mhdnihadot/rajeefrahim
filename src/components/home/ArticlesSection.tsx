@@ -8,7 +8,7 @@ export default function ArticlesSection() {
   const items = articles.slice(0, 9);
 
   return (
-    <section id="articles" className="bg-navy py-16 md:py-24">
+    <section id="articles" className="bg-navy pt-8 pb-16 md:pt-12 md:pb-24">
       <Container>
         <p className="text-center font-aeonik text-base text-gold md:hidden">My Expertise</p>
         <h2 className="mx-auto mt-3 max-w-[280px] text-center font-bloom text-[32px] leading-[1.15] md:mt-0 md:max-w-none md:text-5xl lg:text-[52px]">
