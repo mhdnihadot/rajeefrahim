@@ -1,12 +1,14 @@
 # Brand fonts
 
-Both fonts are commercially licensed — add the files you have a licence for here (not bundled in the repo by default).
+Font files here are **not committed** (see `.gitignore`) until commercial licences are in place.
+Copy them in locally; names must match the `@font-face` rules at the top of `src/app/globals.css`.
 
-| File name expected | Font | Used for |
+| File | Font | Status |
 |---|---|---|
-| `EternalBloom-Regular.woff2` (or `.otf`) | Eternal Bloom | Hero tagline |
-| `Aeonik-Regular.woff2` (or `.otf`) | Aeonik Regular | Hero buttons |
-| `Aeonik-Light.woff2` (or `.otf`) | Aeonik Light | Hero description |
+| `EternalBloom-Regular.otf` | Eternal Bloom | added (personal-use copy — buy commercial licence before launch) |
+| `Aeonik-Regular.otf` / `.woff2` | Aeonik Regular (upright) | **missing** — buttons, labels, card descriptions, article text |
+| `Aeonik-Light.otf` / `.woff2` | Aeonik Light (upright) | **missing** — hero description, "Checkout My Socials" |
+| `Aeonik-RegularItalic.ttf` | Aeonik Regular Italic | added (italic text only) |
+| `Aeonik-LightItalic.ttf` | Aeonik Light Italic | added (italic text only) |
 
-`.woff2` is preferred (smaller). Names must match exactly — or update the `@font-face` rules at the top of `src/app/globals.css`.
-Until the files exist, the site falls back to Gilda Display / Figtree.
+Until an upright Aeonik file exists, that text falls back to Figtree.

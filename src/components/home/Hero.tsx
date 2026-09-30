@@ -29,20 +29,11 @@ export default function Hero() {
 
         {/* Text */}
         <div className="flex flex-col md:order-1">
-          {/* Name is set in the design's display font, supplied as an image */}
-          <h1>
-            <Image
-              src="/images/name-rajeef-rahim.webp"
-              alt={c.name}
-              width={1647}
-              height={282}
-              priority
-              sizes="(min-width: 1280px) 411px, (min-width: 1024px) 340px, (min-width: 768px) 300px, 176px"
-              className="h-auto w-[176px] md:w-[300px] lg:w-[340px] xl:w-[411px]"
-            />
+          <h1 className="font-bloom text-[33px] leading-none whitespace-nowrap md:text-[56px] lg:text-[64px] xl:text-[77px]">
+            {c.name}
           </h1>
 
-          <p className="mt-3 font-bloom text-[23px] leading-[1.15] md:mt-6 md:text-[34px] lg:text-[42px] xl:mt-8 xl:text-[48px] xl:leading-[1.12]">
+          <p className="mt-3 font-bloom text-[22px] leading-[1.15] min-[375px]:text-[24px] min-[390px]:text-[25px] md:mt-6 md:text-[38px] lg:text-[43px] xl:mt-8 xl:text-[56px] xl:leading-[1.12]">
             {c.tagline.map((line, i) => (
               <span key={i} className="block xl:whitespace-nowrap">
                 <GoldText segments={line} />
