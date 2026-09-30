@@ -40,9 +40,3 @@ yarn-error.log*
 *.tsbuildinfo
 next-env.d.ts
 !.env.example
-
-# Licensed brand fonts — not committed until commercial licences are in place (see public/fonts/README.md)
-/public/fonts/*.otf
-/public/fonts/*.ttf
-/public/fonts/*.woff
-/public/fonts/*.woff2
