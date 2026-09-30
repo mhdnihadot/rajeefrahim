@@ -1,12 +1,19 @@
 import type { Metadata, Viewport } from "next";
-import { Figtree, Gilda_Display } from "next/font/google";
+import { Figtree, Gilda_Display, Poppins } from "next/font/google";
 import "./globals.css";
 import { siteConfig } from "@/config/site";
 import SplashScreen from "@/components/layout/SplashScreen";
+import ScrollTopOnLoad from "@/components/layout/ScrollTopOnLoad";
 
 const figtree = Figtree({
   variable: "--font-figtree",
   subsets: ["latin"],
+});
+
+const poppins = Poppins({
+  variable: "--font-poppins-src",
+  subsets: ["latin"],
+  weight: "400",
 });
 
 const gilda = Gilda_Display({
@@ -44,7 +51,7 @@ export const metadata: Metadata = {
 };
 
 export const viewport: Viewport = {
-  themeColor: "#001223",
+  themeColor: "#021122",
   colorScheme: "dark",
 };
 
@@ -52,9 +59,10 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
   return (
     <html
       lang="en"
-      className={`${figtree.variable} ${gilda.variable} h-full antialiased`}
+      className={`${figtree.variable} ${gilda.variable} ${poppins.variable} h-full antialiased`}
     >
       <body className="min-h-full flex flex-col">
+        <ScrollTopOnLoad />
         <SplashScreen />
         {children}
       </body>

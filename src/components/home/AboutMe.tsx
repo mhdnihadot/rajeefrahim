@@ -14,16 +14,16 @@ export default function AboutMe() {
       {/* Heading (mobile sits above the photo; desktop is overlaid bottom-left) */}
       <Container className="md:absolute md:inset-x-0 md:bottom-[9%] md:z-10">
         <div className="md:max-w-[440px] lg:max-w-[600px]">
-          <p className="text-[15px] text-gold md:text-base">{c.eyebrow}</p>
-          <h2 className="mt-2 font-serif text-[30px] leading-[1.15] md:mt-5 md:text-[34px] lg:text-[40px] lg:leading-[1.12]">
+          <p className="font-aeonik text-[15px] text-gold md:text-base">{c.eyebrow}</p>
+          <h2 className="mt-2 font-bloom text-[30px] leading-[1.15] md:mt-5 md:text-[34px] lg:text-[40px] lg:leading-[1.12]">
             <GoldText segments={c.title} />
           </h2>
 
           <div className="max-md:hidden">
-            <p className="mt-4 text-base leading-[1.7] text-white/85 lg:max-w-[520px] lg:text-[17px]">{c.description}</p>
+            <p className="mt-4 font-aeonik text-base leading-[1.7] text-white/85 lg:max-w-[520px] lg:text-[17px]">{c.description}</p>
             <Link
               href={c.cta.href}
-              className="mt-7 inline-block rounded-full bg-gold px-5 py-2 text-[15px] text-navy transition-opacity hover:opacity-90 lg:text-base"
+              className="mt-7 inline-block rounded-full bg-gold font-aeonik px-5 py-2 text-[15px] text-navy transition-opacity hover:opacity-90 lg:text-base"
             >
               {c.cta.label}
             </Link>
@@ -43,16 +43,16 @@ export default function AboutMe() {
         {/* Desktop: navy wash rising from the bottom-left so the overlaid copy stays readable */}
         <div
           aria-hidden
-          className="absolute inset-0 hidden bg-[radial-gradient(ellipse_65%_75%_at_10%_100%,rgba(0,18,35,0.92)_0%,rgba(0,18,35,0.6)_45%,transparent_80%)] md:block"
+          className="absolute inset-0 hidden bg-[radial-gradient(ellipse_65%_75%_at_10%_100%,rgba(2,17,34,0.92)_0%,rgba(2,17,34,0.6)_45%,transparent_80%)] md:block"
         />
       </div>
 
       {/* Mobile copy below the photo */}
       <Container className="md:hidden">
-        <p className="mt-8 text-[15px] leading-[1.7] text-white/85">{c.description}</p>
+        <p className="mt-8 font-aeonik text-[15px] leading-[1.7] text-white/85">{c.description}</p>
         <Link
           href={c.cta.href}
-          className="mt-8 inline-block rounded-full bg-gold px-5 py-2 text-sm text-navy transition-opacity hover:opacity-90"
+          className="mt-8 inline-block rounded-full bg-gold font-aeonik px-5 py-2 text-sm text-navy transition-opacity hover:opacity-90"
         >
           {c.cta.label}
         </Link>

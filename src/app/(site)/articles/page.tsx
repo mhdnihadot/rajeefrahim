@@ -17,8 +17,8 @@ export default function ArticlesPage() {
       <Container>
         <Breadcrumbs backHref="/" items={[{ label: "Home", href: "/" }, { label: "Articles" }]} />
 
-        <p className="mt-10 text-center text-base text-gold md:mt-12 md:text-[17px]">Articles</p>
-        <h1 className="mx-auto mt-3 max-w-[280px] text-center font-serif text-[32px] leading-[1.15] md:max-w-none md:text-5xl lg:text-[52px]">
+        <p className="mt-10 text-center font-aeonik text-base text-gold md:mt-12 md:text-[17px]">Articles</p>
+        <h1 className="mx-auto mt-3 max-w-[280px] text-center font-bloom text-[32px] leading-[1.15] md:max-w-none md:text-5xl lg:text-[52px]">
           Where Experience <br className="md:hidden" />
           Meets <br className="hidden md:block" />
           <span className="text-gold">Opportunity</span>

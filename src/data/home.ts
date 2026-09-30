@@ -27,18 +27,18 @@ export const aboutMeContent = {
 };
 
 const aboutParagraph =
-  "Real Estate May Define What I Do, But The People I Meet And The Experiences I Share Define Who I Am. Away From The Boardroom, I Value Meaningful Conversations, New Perspectives, Time With The People Around Me, And The Moments That Make Life Memorable. Real Estate May Define What I Do, But The People I Meet And The Experiences I Share Define Who I Am. Away From The Boardroom, I Value Meaningful Conversations, New Perspectives, Time With The People Around Me, And The Moments That Make Life Memorable.Real Estate May Define What I Do, But The People I Meet And The Experiences I Share Define Who I Am. Away From The Boardroom, I Value Meaningful Conversations, New Perspectives, Time With The People Around Me, And The Moments That Make Life Memorable.Real Estate May Define What I Do, But The People I Meet And The Experiences I Share Define Who I Am. Away From The Boardroom, I Value Meaningful Conversations, New Perspectives, Time With The People Around Me, And The Moments That Make Life Memorable.";
+  "Real estate may define what I do, but the people I meet and the experiences I share define who I am. Away from the boardroom, I value meaningful conversations, new perspectives, time with the people around me, and the moments that make life memorable. Real estate may define what I do, but the people I meet and the experiences I share define who I am. Away from the boardroom, I value meaningful conversations, new perspectives, time with the people around me, and the moments that make life memorable.Real estate may define what I do, but the people I meet and the experiences I share define who I am. Away from the boardroom, I value meaningful conversations, new perspectives, time with the people around me, and the moments that make life memorable.Real estate may define what I do, but the people I meet and the experiences I share define who I am. Away from the boardroom, I value meaningful conversations, new perspectives, time with the people around me, and the moments that make life memorable.";
 
 export const personContent = {
   eyebrow: "About",
   title: [
     { text: "The " },
     { text: "Person", gold: true },
-    { text: " Behind The " },
+    { text: " Behind the " },
     { text: "Profession", gold: true },
   ],
   quote:
-    "Beyond Property, Meetings, And Milestones, There’s A Person Driven By Curiosity, Connection, And A Genuine Appreciation For The People And Experiences That Make The Journey Meaningful.",
+    "Beyond property, meetings, and milestones, there’s a person driven by curiosity, connection, and a genuine appreciation for the people and experiences that make the journey meaningful.",
   paragraphs: [aboutParagraph, aboutParagraph],
 };
 

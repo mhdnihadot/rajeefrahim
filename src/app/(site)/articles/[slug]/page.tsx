@@ -91,16 +91,16 @@ export default async function ArticleDetailPage({ params }: PageProps<"/articles
               />
             </div>
 
-            <p className="mt-8 flex items-center gap-2 text-[15px] text-white/80 md:mt-10">
+            <p className="mt-8 flex items-center gap-2 font-aeonik text-[15px] text-white/80 md:mt-10">
               <CalendarIcon className="size-4 text-gold" />
               <time dateTime={article.date}>{formatDate(article.date)}</time>
             </p>
 
-            <h1 className="mt-3 font-serif text-[28px] leading-[1.2] md:mt-4 md:text-[42px]">{article.title}</h1>
+            <h1 className="mt-3 font-bloom text-[28px] leading-[1.2] md:mt-4 md:text-[42px]">{article.title}</h1>
 
             <div className="mt-6 space-y-5 md:mt-8 md:space-y-6">
               {article.body.flat().map((p, i) => (
-                <p key={i} className="text-base leading-[1.8] text-white/85 md:text-lg md:leading-[1.85]">
+                <p key={i} className="font-aeonik text-base leading-[1.8] text-white/85 md:text-lg md:leading-[1.85]">
                   {p}
                 </p>
               ))}

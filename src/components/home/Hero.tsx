@@ -8,7 +8,7 @@ import SocialLinks from "@/components/ui/SocialLinks";
 export default function Hero() {
   return (
     <section className="overflow-hidden bg-navy pb-8 md:pb-24">
-      <Container className="grid items-center gap-8 md:grid-cols-[minmax(0,1fr)_300px] md:gap-6 md:pt-20 lg:grid-cols-[minmax(0,1fr)_360px] xl:grid-cols-[minmax(0,1fr)_420px] xl:pt-28">
+      <Container className="grid items-center gap-8 md:grid-cols-[minmax(0,1fr)_300px] md:gap-6 md:pt-12 lg:grid-cols-[minmax(0,1fr)_360px] xl:grid-cols-[minmax(0,1fr)_420px] xl:pt-16">
         {/* Photo — full 2:3 portrait (head to hands). First on mobile; right column on
             desktop, top aligned with the name and nudged past the content edge. */}
         <div className="relative mx-auto w-full max-w-[345px] md:order-2 md:max-w-none md:w-full md:self-start xl:mt-8 xl:translate-x-16 min-[1440px]:translate-x-24">
@@ -29,8 +29,16 @@ export default function Hero() {
 
         {/* Text */}
         <div className="flex flex-col md:order-1">
-          <h1 className="font-serif text-[34px] leading-tight md:text-[52px] lg:text-[60px] xl:text-[72px] xl:leading-[1.1]">
-            {c.name}
+          {/* Name is set in the design's display font, supplied as an image */}
+          <h1>
+            <Image
+              src="/images/name-rajeef-rahim.png"
+              alt={c.name}
+              width={558}
+              height={95}
+              priority
+              className="h-auto w-[176px] md:w-[300px] lg:w-[340px] xl:w-[411px]"
+            />
           </h1>
 
           <p className="mt-3 font-bloom text-[23px] leading-[1.15] md:mt-6 md:text-[34px] lg:text-[42px] xl:mt-8 xl:text-[48px] xl:leading-[1.12]">
@@ -61,7 +69,7 @@ export default function Hero() {
           </div>
 
           <div className="mt-12 flex flex-col items-start gap-5 md:mt-24 md:items-end md:gap-4 md:pr-4">
-            <p className="text-base font-light text-white/80 md:text-[17px]">{c.socialsLabel}</p>
+            <p className="font-aeonik text-base font-light text-white/80 md:text-[17px]">{c.socialsLabel}</p>
             <SocialLinks variant="circle" className="gap-4 md:gap-5" />
           </div>
         </div>

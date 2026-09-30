@@ -33,7 +33,7 @@
 }
 
 :root {
-  --navy: #001223;
+  --navy: #021122;
   --navy-soft: #03193a;
   --gold: #d6bf76;
 }
@@ -46,6 +46,7 @@
   --font-serif: var(--font-gilda);
   --font-bloom: "Eternal Bloom", var(--font-gilda), serif;
   --font-aeonik: "Aeonik", var(--font-figtree), sans-serif;
+  --font-poppins: var(--font-poppins-src), sans-serif;
 }
 
 html {

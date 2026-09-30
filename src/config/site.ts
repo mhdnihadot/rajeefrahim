@@ -20,14 +20,14 @@ export const siteConfig = {
     { label: "About", href: "/#about" },
     { label: "Article", href: "/articles" },
   ],
-  // Footer links — Privacy Policy / Terms pages don't exist yet ("#" placeholders).
+  // Footer links — "Opportunities" has no page yet ("#" placeholder).
   footerLinks: [
     { label: "Home", href: "/" },
     { label: "About", href: "/#about" },
-    { label: "Articles", href: "/articles" },
+    { label: "Expertise", href: "/#articles" },
+    { label: "Insights", href: "/articles" },
+    { label: "Opportunities", href: "#" },
     { label: "Contact", href: "/#contact" },
-    { label: "Privacy Policy", href: "#" },
-    { label: "Terms", href: "#" },
   ],
   socials: {
     linkedin: "#",

@@ -10,8 +10,8 @@ export default function ArticlesSection() {
   return (
     <section id="articles" className="bg-navy py-16 md:py-24">
       <Container>
-        <p className="text-center text-base text-gold md:hidden">My Expertise</p>
-        <h2 className="mx-auto mt-3 max-w-[280px] text-center font-serif text-[32px] leading-[1.15] md:mt-0 md:max-w-none md:text-5xl lg:text-[52px]">
+        <p className="text-center font-aeonik text-base text-gold md:hidden">My Expertise</p>
+        <h2 className="mx-auto mt-3 max-w-[280px] text-center font-bloom text-[32px] leading-[1.15] md:mt-0 md:max-w-none md:text-5xl lg:text-[52px]">
           Where Experience <br className="md:hidden" />
           Meets <br className="hidden md:block" />
           <span className="text-gold">Opportunity</span>
@@ -26,7 +26,7 @@ export default function ArticlesSection() {
         <div className="mt-6 flex justify-center md:mt-7">
           <Link
             href="/articles"
-            className="rounded-full bg-gold px-4 py-1.5 text-[13px] text-navy transition-opacity hover:opacity-90 md:px-6 md:py-3 md:text-[17px]"
+            className="rounded-full bg-gold px-4 py-1.5 font-aeonik text-[13px] text-navy transition-opacity hover:opacity-90 md:px-6 md:py-3 md:text-[17px]"
           >
             <span className="md:hidden">View All</span>
             <span className="max-md:hidden">View More</span>
