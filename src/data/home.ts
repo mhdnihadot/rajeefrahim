@@ -7,7 +7,7 @@ export const heroContent = {
     [{ text: "Building Trust. " }, { text: "Creating Value.", gold: true }],
     [{ text: "Shaping " }, { text: "Dubai’s Real Estate Future.", gold: true }],
   ],
-  description: "Lorem Ipsum Dolor Sit Amet, Consectetur Adipiscing Elit.",
+  description: "Helping investors make confident moves in Dubai real estate.",
   image: { src: "/images/rajeef-rahim.webp", width: 2730, height: 4096 },
   primaryCta: { label: "Explore My Journey", href: "/#about" },
   secondaryCta: { label: "Connect With Me", href: "/#contact" },

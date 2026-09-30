@@ -1,9 +1,9 @@
-import { FaFacebook, FaInstagram, FaLinkedinIn } from "react-icons/fa6";
+import { FaInstagram, FaLinkedinIn, FaXTwitter } from "react-icons/fa6";
 import { siteConfig } from "@/config/site";
 
 const items = [
   { label: "LinkedIn", href: siteConfig.socials.linkedin, Icon: FaLinkedinIn },
-  { label: "Facebook", href: siteConfig.socials.facebook, Icon: FaFacebook },
+  { label: "X", href: siteConfig.socials.x, Icon: FaXTwitter },
   { label: "Instagram", href: siteConfig.socials.instagram, Icon: FaInstagram },
 ];
 
