@@ -1,0 +1,38 @@
+import { FaFacebook, FaInstagram, FaLinkedinIn } from "react-icons/fa6";
+import { siteConfig } from "@/config/site";
+
+const items = [
+  { label: "LinkedIn", href: siteConfig.socials.linkedin, Icon: FaLinkedinIn },
+  { label: "Facebook", href: siteConfig.socials.facebook, Icon: FaFacebook },
+  { label: "Instagram", href: siteConfig.socials.instagram, Icon: FaInstagram },
+];
+
+type Props = {
+  /** "plain" = bare gold icons (header), "circle" = outlined round buttons (hero) */
+  variant?: "plain" | "circle";
+  className?: string;
+};
+
+export default function SocialLinks({ variant = "plain", className = "" }: Props) {
+  return (
+    <ul className={`flex items-center ${className}`}>
+      {items.map(({ label, href, Icon }) => (
+        <li key={label}>
+          <a
+            href={href}
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label={label}
+            className={
+              variant === "circle"
+                ? "flex size-12 items-center justify-center rounded-full border border-white/40 text-gold transition-colors hover:border-gold md:size-10"
+                : "flex items-center text-gold transition-opacity hover:opacity-80"
+            }
+          >
+            <Icon className={variant === "circle" ? "size-5 md:size-4" : "size-[18px] md:size-4"} />
+          </a>
+        </li>
+      ))}
+    </ul>
+  );
+}
