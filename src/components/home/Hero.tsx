@@ -32,11 +32,12 @@ export default function Hero() {
           {/* Name is set in the design's display font, supplied as an image */}
           <h1>
             <Image
-              src="/images/name-rajeef-rahim.png"
+              src="/images/name-rajeef-rahim.webp"
               alt={c.name}
-              width={558}
-              height={95}
+              width={1647}
+              height={282}
               priority
+              sizes="(min-width: 1280px) 411px, (min-width: 1024px) 340px, (min-width: 768px) 300px, 176px"
               className="h-auto w-[176px] md:w-[300px] lg:w-[340px] xl:w-[411px]"
             />
           </h1>
