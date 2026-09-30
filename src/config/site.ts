@@ -1,7 +1,12 @@
 export const siteConfig = {
   name: "Rajeef Rahim",
-  // Set NEXT_PUBLIC_SITE_URL in production so canonical/OG/sitemap URLs are absolute and correct.
-  url: process.env.NEXT_PUBLIC_SITE_URL || "http://localhost:3000",
+  // Public site URL — used for canonical links, sitemap and the share (Open Graph) image.
+  // Set NEXT_PUBLIC_SITE_URL once the domain is live; on Vercel it falls back to the deployment URL.
+  url:
+    process.env.NEXT_PUBLIC_SITE_URL ||
+    (process.env.VERCEL_PROJECT_PRODUCTION_URL && `https://${process.env.VERCEL_PROJECT_PRODUCTION_URL}`) ||
+    (process.env.VERCEL_URL && `https://${process.env.VERCEL_URL}`) ||
+    "http://localhost:3000",
   title: "Rajeef Rahim | Dubai Real Estate Expert",
   description:
     "Rajeef Rahim — building trust, creating value and shaping Dubai's real estate future. Insights on Dubai property, investment, developments and investor relations.",
